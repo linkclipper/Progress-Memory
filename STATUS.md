@@ -4,7 +4,7 @@ Updated: 2026-11-08
 
 ## Now
 
-- Dashboard bulk actions shipped in source (`92daed1`): select visible cards, move to board, add tag, or confirmed delete; selection is pruned when filters change and writes/tombstones are batched. Seven node tests pass; dashboard harness screenshot verified. CI and owner's hands-on check pending.
+- Dashboard bulk actions shipped in source (`92daed1`): select visible cards, move to board, add tag, or confirmed delete; selection is pruned when filters change and writes/tombstones are batched. Seven node tests pass; dashboard harness screenshot verified; CI green. Owner's hands-on check pending.
 - Duplicate-save refinement shipped in source (`0ed116c`): popup and in-page save now show an existing item and offer explicit update vs another copy; saved note/tags/board prefill, URL and canonical matching tested. CI check pending; owner should reload and try a duplicate.
 - **Phase B v1 in review:** static board share links work, and a discoverability fix (`ef49d9d`) makes Share visible in the selected-board toolbar and on sidebar boards. The initial release had put Share only inside an unreachable editor. v0.4.0 is in the manifest; release tag pending the owner's hands-on verification after reloading the unpacked extension.
 - Store screenshots regenerated earlier today with photo thumbnails; published in `brand/` + site assets.
