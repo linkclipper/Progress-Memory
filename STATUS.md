@@ -4,33 +4,17 @@ Updated: 2026-11-08
 
 ## Now
 
-- Linked-loop identity replaces the old WebCollector `W` (`3bb8c39` product, `933fc6e` site, `99612c7` brand): manifest PNGs, dashboard, popup, in-page quick-save SVG, site, share viewer and refreshed store/site screenshots. Vector reference and generator are checked in; 16 Node tests pass. Reload the extension to see updated toolbar and UI icons; v0.4.0 remains untagged.
-- Pre-release polish shipped in source (`78176be`): refined dashboard hierarchy and card surfaces plus optional, explicit-save local profile (display name, short note, avatar color). Profile stays in local settings, not Supabase board/item sync or board snapshots. Landing page (`a0ef942`) is redesigned with accurate features, install/release links, privacy/FAQ, and a v0.4.0 preview label while v0.3.0 remains the latest tagged release. Fourteen Node tests pass; owner loaded-extension review pending.
-- Command palette shipped in source (`90e480b`): searchable dashboard actions and board navigation, Commands button, Ctrl/⌘+Shift+P default, local presets/custom-key recording, and a shortcut settings panel that displays the browser-owned capture assignment. Twelve Node tests pass; real-extension verification pending.
-- Faster capture shipped in source (`f07bf6f`): Alt+Shift+L invokes the MV3 action popup; board picker focused, Ctrl/⌘+Enter explicitly saves. No silent save, no new permission. Owner tested it successfully.
-- Dashboard bulk actions shipped in source (`92daed1`): select visible cards, move to board, add tag, or confirmed delete; selection is pruned when filters change and writes/tombstones are batched. Seven node tests pass; dashboard harness screenshot verified; CI green. Owner's hands-on check pending.
-- Duplicate-save refinement shipped in source (`0ed116c`): popup and in-page save now show an existing item and offer explicit update vs another copy; saved note/tags/board prefill, URL and canonical matching tested. CI check pending; owner should reload and try a duplicate.
-- **Phase B v1 in review:** static board share links work, and a discoverability fix (`ef49d9d`) makes Share visible in the selected-board toolbar and on sidebar boards. The initial release had put Share only inside an unreachable editor. v0.4.0 is in the manifest; release tag pending the owner's hands-on verification after reloading the unpacked extension.
-- Store screenshots regenerated earlier today with photo thumbnails; published in `brand/` + site assets.
-- Org structure complete: 13 live repos. All policy/process repos seeded with real content.
-
-## Shipped (latest first)
-
-- **v0.3.0** released: `LinkClipper-0.3.0.zip` on the GitHub release; CI green (`check & pack`, 19s); auto-release-from-tag proven.
-- Reader feature (background fetch + extraction, per-site permission on click), YouTube floating window, Vimeo/IG/TikTok inline, `.hidden` bug fix, rebrand to LinkClipper.
-- Schema versioning + migration ladder (`wc_meta`, `Store.MIGRATIONS`), board `visibility` reserved (`private` default).
-
-## In flight
-
-- None.
+- **v0.4.0 released** after owner hands-on confirmation. Tag `v0.4.0` points to product `f654f76`; check & pack CI and tag-triggered release CI passed. Public release includes `LinkClipper-0.4.0.zip`; downloaded artifact verified against the GitHub SHA-256 digest, manifest version, required files and exclusion of the dev harness.
+- The release includes static board snapshot sharing, explicit duplicate choices, bulk collection tools, quick-save and palette shortcuts, local profile, dashboard polish and the linked-loop mark. Core use remains account-free and local-first; snapshot links cannot be revoked.
+- Landing page update `be671fe` replaces preview messaging with v0.4.0 release copy; Pages deployment `42510118188` passed and live content was checked.
+- The 13-repo organization remains populated; product and brand assets, documentation and policies are maintained separately.
 
 ## Blocked (waiting on)
 
-- **CWS listing submission** — blocked on owner's Chrome Web Store account actions: upload zip, fill data disclosure (privacy URL known: `https://linkclipper.github.io/privacy.html`), attach the 3 screenshots from `brand/webstore-screenshots/`, submit. Justifications ready in `Knowledgebase/runbooks/cws-submission.md`.
+- **Chrome Web Store submission** requires owner account actions: upload the v0.4.0 zip, complete data disclosure, attach current screenshots from `brand/webstore-screenshots/`, and submit. Privacy URL: `https://linkclipper.github.io/privacy.html`. Justifications: `Knowledgebase/runbooks/cws-submission.md`.
 
-## Next (in order)
+## Next
 
-1. Owner: reload extension; review polished dashboard and explicitly save/reopen a local profile. Verify duplicate save preserves note/tags/board and offers update vs another copy; test a board snapshot share link. Tag v0.4.0 only after these checks; update the landing page's preview/download copy when the release is live.
-2. Owner: reload extension and test Commands button, palette search/navigation, Ctrl/⌘+Shift+P, a recorded custom key, and the browser shortcut settings link.
-3. Phase B2 live/revocable boards: resolve the anon-key write risk before sharing from a user-owned sync project. The v1 fragment snapshots neither change visibility nor require sync.
-4. Phase C later: hosted accounts + discovery (roadmap Phase C in product repo's `docs/ROADMAP.md`).
+1. Prepare the Chrome Web Store listing using the v0.4.0 artifact and refreshed linked-loop screenshots; submission requires owner account access.
+2. Phase B2 live/revocable boards only after resolving the anon-key write risk. v1 snapshots remain static and non-revocable.
+3. Phase C later: hosted accounts and discovery, while offline core remains independent (see product `docs/ROADMAP.md`).
