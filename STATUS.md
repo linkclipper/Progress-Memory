@@ -4,6 +4,7 @@ Updated: 2026-11-08
 
 ## Now
 
+- Pre-release polish shipped in source (`78176be`): refined dashboard hierarchy and card surfaces plus optional, explicit-save local profile (display name, short note, avatar color). Profile stays in local settings, not Supabase board/item sync or board snapshots. Landing page (`a0ef942`) is redesigned with accurate features, install/release links, privacy/FAQ, and a v0.4.0 preview label while v0.3.0 remains the latest tagged release. Fourteen Node tests pass; owner loaded-extension review pending.
 - Command palette shipped in source (`90e480b`): searchable dashboard actions and board navigation, Commands button, Ctrl/⌘+Shift+P default, local presets/custom-key recording, and a shortcut settings panel that displays the browser-owned capture assignment. Twelve Node tests pass; real-extension verification pending.
 - Faster capture shipped in source (`f07bf6f`): Alt+Shift+L invokes the MV3 action popup; board picker focused, Ctrl/⌘+Enter explicitly saves. No silent save, no new permission. Owner tested it successfully.
 - Dashboard bulk actions shipped in source (`92daed1`): select visible cards, move to board, add tag, or confirmed delete; selection is pruned when filters change and writes/tombstones are batched. Seven node tests pass; dashboard harness screenshot verified; CI green. Owner's hands-on check pending.
@@ -28,7 +29,7 @@ Updated: 2026-11-08
 
 ## Next (in order)
 
-1. Owner: reload extension; verify a duplicate save keeps the existing note/tags/board and gives the choice to update or save another copy. Also test Share board. Tag v0.4.0 only after these checks.
+1. Owner: reload extension; review polished dashboard and explicitly save/reopen a local profile. Verify duplicate save preserves note/tags/board and offers update vs another copy; test a board snapshot share link. Tag v0.4.0 only after these checks; update the landing page's preview/download copy when the release is live.
 2. Owner: reload extension and test Commands button, palette search/navigation, Ctrl/⌘+Shift+P, a recorded custom key, and the browser shortcut settings link.
 3. Phase B2 live/revocable boards: resolve the anon-key write risk before sharing from a user-owned sync project. The v1 fragment snapshots neither change visibility nor require sync.
 4. Phase C later: hosted accounts + discovery (roadmap Phase C in product repo's `docs/ROADMAP.md`).
