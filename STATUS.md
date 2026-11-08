@@ -5,7 +5,7 @@ Updated: 2026-11-08
 ## Now
 
 - Store screenshots (grid / reader / edit) regenerated with photo thumbnails and verified; published to `linkclipper.github.io/assets/`, `brand/webstore-screenshots/`.
-- Org structure complete: 6 live repos — product, Knowledgebase, backend, brand, design-system, linkclipper.github.io + .github profile.
+- Org structure complete: 13 live repos — product, Knowledgebase, backend, brand, design-system, Progress-Memory, Workflows, Security-Trust, Monetization, Marketing, Data-Analytics, linkclipper.github.io + .github profile. All policy/process repos seeded with real content (business model ban list, launch plan, threat model, procedures, zero-telemetry law).
 
 ## Shipped (latest first)
 
