@@ -4,6 +4,7 @@ Updated: 2026-11-08
 
 ## Now
 
+- Linked-loop identity replaces the old WebCollector `W` (`3bb8c39` product, `933fc6e` site, `99612c7` brand): manifest PNGs, dashboard, popup, in-page quick-save SVG, site, share viewer and refreshed store/site screenshots. Vector reference and generator are checked in; 16 Node tests pass. Reload the extension to see updated toolbar and UI icons; v0.4.0 remains untagged.
 - Pre-release polish shipped in source (`78176be`): refined dashboard hierarchy and card surfaces plus optional, explicit-save local profile (display name, short note, avatar color). Profile stays in local settings, not Supabase board/item sync or board snapshots. Landing page (`a0ef942`) is redesigned with accurate features, install/release links, privacy/FAQ, and a v0.4.0 preview label while v0.3.0 remains the latest tagged release. Fourteen Node tests pass; owner loaded-extension review pending.
 - Command palette shipped in source (`90e480b`): searchable dashboard actions and board navigation, Commands button, Ctrl/⌘+Shift+P default, local presets/custom-key recording, and a shortcut settings panel that displays the browser-owned capture assignment. Twelve Node tests pass; real-extension verification pending.
 - Faster capture shipped in source (`f07bf6f`): Alt+Shift+L invokes the MV3 action popup; board picker focused, Ctrl/⌘+Enter explicitly saves. No silent save, no new permission. Owner tested it successfully.
